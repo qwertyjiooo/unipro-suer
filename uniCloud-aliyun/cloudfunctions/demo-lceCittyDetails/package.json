@@ -1,0 +1,7 @@
+{
+  "name": "lceCittyDetails",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

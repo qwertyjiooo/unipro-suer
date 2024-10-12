@@ -1,0 +1,7 @@
+{
+  "name": "demo-homestays-details",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

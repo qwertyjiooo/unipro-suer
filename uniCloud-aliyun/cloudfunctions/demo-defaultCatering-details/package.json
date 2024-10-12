@@ -1,0 +1,7 @@
+{
+  "name": "demo-defaultCatering-details",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

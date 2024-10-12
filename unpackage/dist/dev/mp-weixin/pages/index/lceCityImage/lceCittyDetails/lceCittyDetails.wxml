@@ -1,0 +1,1 @@
+<view><view><video class="myVideo" id="myVideo" src="{{homestaysList.video.url}}" show-loading="{{true}}" autoplay="true" controls="{{true}}" object-fit="contain" data-event-opts="{{[['error',[['videoErrorCallback',['$event']]]]]}}" binderror="__e"></video></view><view class="videoText">{{''+homestaysList.title+''}}</view></view>

@@ -1,0 +1,53 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"title": {
+			"title": "景点名称",
+			"bsonType": "string",
+			"description": "请输入景点名称",
+			"label": "景点名称",
+			"trim": "both"
+		},
+		"pageavater":{
+			"title": "封面",
+			"bsonType": "file"
+		},
+		"longitude": {
+			"bsonType": "string",
+			"title": "经度",
+			"description": "请输入经度 如：116.38",
+			"label": "经度",
+			"trim": "both"
+		},
+		"latitude": {
+			"bsonType": "string",
+			"title": "纬度",
+			"description": "请输入纬度 如：39.9",
+			"label": "纬度",
+			"trim": "both"
+		},
+		"attractions": {
+			"bsonType": "string",
+			"title": "景点介绍",
+			"trim": "both"
+		},
+		"ranking":{
+			"bsonType": "string",
+			"title": "推荐排名",
+			"trim": "both",
+			"order": 0
+		}
+
+	}
+}

@@ -1,0 +1,128 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": true,
+		"update": "doc.user_id == auth.uid || doc.customizer_id == auth.uid",
+		"delete": "doc.user_id == auth.uid"
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"customizer_id": {
+			"bsonType": "string",
+			"title": "定制师ID",
+			"description": "定制师ID",
+			"order": 1,
+			"trim": "both"
+		},
+		"route_id": {
+			"bsonType": "string",
+			"title": "定制路线/预约景区ID",
+			"description": "定制路线/预约景区ID",
+			"order": 2,
+			"trim": "both"
+		},
+		"user_id": {
+			"bsonType": "String",
+			"description": "下单用户ID，uni-id-users表",
+			"foreignKey": "uni-id-users._id",
+			"forceDefaultValue": {
+				"$env": "uid"
+			}
+		},
+		"status": {
+			"bsonType": "int",
+			"description": "订单状态，0：待旅行，1：已完成，2：已取消",
+			"defaultValue": 0,
+			"enum": [
+				{
+					"text": "待接收",
+					"value": 0
+				},
+				{
+					"text": "待旅行",
+					"value": 1
+				},
+				{
+					"text": "已完成",
+					"value": 2
+				},
+				{
+					"text": "已取消",
+					"value": 3
+				}
+			]
+		},
+		"customizaType": {
+			"bsonType": "int",
+			"description": "定制类型，0：个人/家庭定制，1：企业/团建定制",
+			"defaultValue": 0,
+			"enum": [{
+					"text": "个人/家庭定制",
+					"value": 0
+				},
+				{
+					"text": "企业/团建定制",
+					"value": 1
+				}
+			]
+		},
+		"orderNumber": {
+			"bsonType": "string",
+			"title": "订单号",
+			"description": "订单号"
+		},
+		"title": {
+			"bsonType": "string",
+			"title": "定制路线/预约景区标题",
+			"description": "定制路线/预约景区标题"
+		},
+		"create_time": {
+			"bsonType": "timestamp",
+			"title": "创建时间",
+			"defaultValue": {
+				"$env": "now"
+			}
+		},
+		"destination": {
+			"bsonType": "string",
+			"title": "目的地",
+			"description": "目的地"
+		},
+		"playtime": {
+			"bsonType": "string",
+			"title": "游玩时间",
+			"description": "游玩时间"
+		},
+		"NumberTravelers": {
+			"bsonType": "string",
+			"title": "游玩人数",
+			"description": "游玩人数"
+		},
+		"budget": {
+			"bsonType": "string",
+			"title": "人均预算",
+			"description": "人均预算"
+		},
+		"contacts": {
+			"bsonType": "string",
+			"title": "联系人",
+			"description": "联系人"
+		},
+		"contactPhone": {
+			"bsonType": "string",
+			"title": "联系电话",
+			"description": "联系电话"
+		},
+		"enterpriseName": {
+			"bsonType": "string",
+			"title": "企业名称",
+			"description": "企业名称"
+		}
+
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "name": "home_icon",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

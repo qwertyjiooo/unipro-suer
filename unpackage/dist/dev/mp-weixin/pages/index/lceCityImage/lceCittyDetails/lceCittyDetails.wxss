@@ -1,0 +1,10 @@
+
+.myVideo {
+	width: 100%;
+}
+.videoText {
+	font-size: 32rpx;
+	line-height: 64rpx;
+	padding: 0 20rpx;
+}
+

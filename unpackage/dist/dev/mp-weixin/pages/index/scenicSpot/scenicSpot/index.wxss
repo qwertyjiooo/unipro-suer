@@ -1,0 +1,328 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.tattole {
+  box-shadow: 0rpx 0rpx 20rpx 0rpx rgba(0, 0, 0, 0.1);
+}
+.details {
+  background-color: #f6fbff;
+  position: relative;
+}
+.details .areaName {
+  background-color: #ffffff;
+  padding: 20rpx 20rpx 0;
+}
+.details .areaName .play {
+  border-bottom: #d5d5d5 1rpx solid;
+  border-top: #d5d5d5 1rpx solid;
+}
+.details .areaName .areaNameTatal {
+  font-size: 32rpx;
+  padding-bottom: 20rpx;
+}
+.details .areaName .areaNameTatal .areaNameText {
+  font-size: 24rpx;
+  line-height: 48rpx;
+  color: #999;
+}
+.details .areaName .areaNameTime {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 26rpx;
+  padding: 20rpx 0;
+}
+.details .areaName .areaNameTime .seeDetail {
+  font-size: 26rpx;
+  color: #4caaf9;
+  display: flex;
+  flex-direction: column;
+}
+.details .menuTrue {
+  margin: 20rpx 0;
+  padding: 20rpx;
+  background-color: #ffffff;
+  box-shadow: 0rpx 0rpx 20rpx 0rpx rgba(0, 0, 0, 0.1);
+}
+.details .menuTrue .menuTrueText {
+  padding: 20rpx 0;
+  color: #4caaf9;
+  font-size: 26rpx;
+  text-align: center;
+  background-color: #fff9f9;
+}
+.details .menu {
+  white-space: nowrap;
+  padding-bottom: 20rpx;
+  /* 防止换行 */
+}
+.details .menu ::-webkit-scrollbar {
+  display: none;
+}
+.details .menu .menu-item {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 26rpx;
+  line-height: 35rpx;
+  padding: 15rpx 25rpx;
+  background-color: #fffcfc;
+  font-weight: 600;
+  margin-right: 20rpx;
+}
+.details .menu .active {
+  background-color: #e6f7ff;
+}
+.details .tabtotle {
+  position: relative;
+}
+.details .tabplay {
+  position: fixed;
+  width: 100%;
+  top: calc(33.4px + env(safe-area-inset-top));
+}
+.details .tab {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: #999 1rpx solid;
+}
+.details .tab .active {
+  background-color: #c5e1ff;
+  color: #ffffff;
+  /* 高亮边框颜色 */
+}
+.details .tab .navigation {
+  width: 50%;
+  text-align: center;
+  font-size: 26rpx;
+  padding: 20rpx 20rpx;
+}
+.details .predetermine {
+  padding: 20rpx 20rpx 120rpx;
+  background-color: #ffffff;
+  margin-bottom: 60rpx;
+}
+.details .predetermine .predetermineTatle {
+  font-size: 32rpx;
+  padding-bottom: 20rpx;
+}
+.details .predetermine .predetermineText {
+  word-wrap: break-word;
+  /* 当单词过长时自动换行 */
+  word-break: break-all;
+  /* 在单词内部换行 */
+  font-size: 26rpx;
+}
+.details .bigeminy {
+  padding: 20rpx;
+  background-color: #ffffff;
+  margin-bottom: 20rpx;
+}
+.details .bigeminy .bigeminyText {
+  border-bottom: #d5d5d5 1rpx solid;
+  padding-bottom: 20rpx;
+}
+.details .bigeminy .play {
+  font-size: 32rpx;
+}
+.details .bigeminy .spot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details .bigeminy .spot .playBorder {
+  border-bottom: 1rpx solid #d5d5d5;
+}
+.details .bigeminy .spot .priceTicket {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.details .bigeminy .spot .priceTicket .priceText {
+  font-size: 26rpx;
+}
+.details .bigeminy .spot .priceTicket .priceText .priceTicketText {
+  color: red;
+  font-size: 24rpx;
+}
+.details .bigeminy .spot .priceTicket .priceText .seeDetail {
+  font-size: 24rpx;
+  color: #4caaf9;
+}
+.details .bigeminy .spot .priceTicket .price {
+  text-align: right;
+}
+.details .bigeminy .spot .priceTicket .price .priceNamber .priceSpanA {
+  font-size: 24rpx;
+  color: #999;
+  position: relative;
+  font-size: 24rpx;
+  color: #999;
+  position: relative;
+  margin-right: 10rpx;
+}
+.details .bigeminy .spot .priceTicket .price .priceNamber .priceSpanA::after {
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #999;
+  /* 横线样式 */
+}
+.details .bigeminy .spot .priceTicket .price .priceNamber .priceSpanB {
+  font-size: 32rpx;
+  color: #4caaf9;
+}
+.details .bigeminy .spot .priceTicket .price .addPrice {
+  margin-top: 10rpx;
+  display: inline-block;
+  background-color: #4caaf9;
+  border-radius: 100rpx;
+}
+.details .bigeminy .spot .priceTicket .price .Number {
+  border: 2rpx #4caaf9 solid;
+  background-color: #ffffff;
+  font-size: 32rpx;
+  padding: 1rpx 7.5rpx;
+  color: #4caaf9;
+}
+.details .bigeminy .spot .priceTicket .price .addPriceNumber {
+  font-size: 26rpx;
+  padding: 0 20rpx;
+}
+.details .infoPoput {
+  padding: 20rpx;
+  background-color: #ffffff;
+  height: 500rpx;
+}
+.details .infoPoput .popup-content {
+  font-size: 32rpx;
+  position: relative;
+  text-align: center;
+  border-bottom: #d5d5d5 1rpx solid;
+  padding-bottom: 20rpx;
+}
+.details .infoPoput .popup-content ._img {
+  position: absolute;
+  top: 6rpx;
+  right: 0;
+  width: 32rpx;
+  height: 32rpx;
+}
+.details .infoPoput .cost {
+  font-size: 26rpx;
+  padding: 20rpx;
+  background-color: #eeeeee;
+  margin-top: 20rpx;
+}
+.details .infoPoput .buttonPrimary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details .infoPoput .buttonPrimary button {
+  width: 48%;
+  margin-top: 40rpx;
+}
+.details .infoPoput .costDetails {
+  font-size: 26rpx;
+  padding: 20rpx;
+  line-height: 40 rpx;
+}
+.details .poputPlay {
+  height: auto;
+}
+.details .buttomNumber {
+  position: fixed;
+  bottom: 0;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx 0;
+}
+.details .buttomNumber .add {
+  margin: 0 20rpx;
+  font-size: 26rpx;
+}
+.details .buttomNumber .amount ._span {
+  font-size: 26rpx;
+  text-align: center;
+}
+.details .buttomNumber .look {
+  padding: 20rpx 40rpx;
+  background-color: #4caaf9;
+  border-radius: 5rpx;
+}
+.details .totle {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 'a b c d' 'e f g h';
+  gap: 10rpx;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #d5d5d5;
+}
+.details .totle .totleTime {
+  padding: 5rpx;
+  font-size: 24rpx;
+  border: #d5d5d5 1rpx solid;
+  text-align: center;
+  border-radius: 5rpx;
+}
+.details .totle .active {
+  border: #4caaf9 1rpx solid;
+  color: #4caaf9;
+  /* 高亮边框颜色 */
+}
+.details .totle :nth-child(1) {
+  grid-area: a;
+  pointer-events: none;
+  border: #d5d5d5 1rpx solid;
+  color: #d5d5d5;
+}
+.details .totle :nth-child(2) {
+  grid-area: b;
+}
+.details .totle :nth-child(3) {
+  grid-area: c;
+}
+.details .totle :nth-child(4) {
+  grid-area: d;
+}
+.details .totle :nth-child(5) {
+  grid-area: e;
+}
+.details .totle :nth-child(6) {
+  grid-area: f;
+  pointer-events: none;
+  border: #d5d5d5 1rpx solid;
+  color: #d5d5d5;
+}
+

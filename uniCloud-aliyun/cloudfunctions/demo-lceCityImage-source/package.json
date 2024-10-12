@@ -1,0 +1,7 @@
+{
+  "name": "demo-lceCityImage-source",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

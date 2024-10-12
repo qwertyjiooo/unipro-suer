@@ -1,0 +1,75 @@
+// 文档教程: https://uniapp.dcloud.net.cn/uniCloud/schema
+{
+	"bsonType": "object",
+	"required": [],
+	"permission": {
+		"read": true,
+		"create": false,
+		"update": false,
+		"delete": false
+	},
+	"properties": {
+		"_id": {
+			"description": "ID，系统自动生成"
+		},
+		"title": {
+			"title": "标题",
+			"bsonType": "string",
+			"description": "请输入标题",
+			"label": "标题",
+			"trim": "both"
+		},
+		"pageNav": {
+			"title": "所属分类",
+			"bsonType": "string",
+			"foreignKey": "demo-MicroTravel._id",
+			"enum": {
+				"collection": "demo-MicroTravel",
+				"field": "_id as value,title as text"
+			}
+		},
+		"region": {
+			"title": "行政区域",
+			"bsonType": "string",
+			"foreignKey": "demo-lceCityImage-Region._id",
+			"enum": {
+				"collection": "demo-lceCityImage-Region",
+				"field": "_id as value,title as text"
+			}
+		},
+		"theme": {
+			"title": "主题",
+			"bsonType": "string",
+			"foreignKey": "demo-lceCityImage-theme._id",
+			"enum": {
+				"collection": "demo-lceCityImage-theme",
+				"field": "_id as value,title as text"
+			}
+		},
+		"source": {
+			"title": "来源",
+			"bsonType": "string",
+			"foreignKey": "demo-lceCityImage-source._id",
+			"enum": {
+				"collection": "demo-lceCityImage-source",
+				"field": "_id as value,title as text"
+			}
+		},
+		"images": {
+			"bsonType": "array",
+			"arrayType": "file",
+			"title": "展示照片",
+			"multiple": true, // 允许选择多张图片，schema2code生效
+			"fileMediaType": "image", // 可选值 all|image|video 默认值为all,表示所有文件，image表示图片类型文件，video表示视频类型文件
+			"fileExtName": "jpg,png" // 扩展名过滤，多个用 , 分割
+			// "maxLength": 3 // 限制最大数量
+		},
+		"brief": {
+			"bsonType": "string",
+			"title": "简介",
+			"description": "请输入定制简介",
+			"label": "简介",
+			"trim": "both"
+		}
+	}
+}

@@ -1,0 +1,7 @@
+{
+  "name": "demo-Nav-MicroTravel",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}

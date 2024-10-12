@@ -1,0 +1,85 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cantect/cantect",
+    "pages/about/about",
+    "pages/mylogn/mylogn",
+    "pages/index/scenicSpot/index",
+    "pages/index/scenicSpot/details/index",
+    "pages/index/homestays/index",
+    "pages/index/entertainment/index",
+    "pages/index/MicroTravel/index",
+    "pages/index/scenicSpot/scenicSpot/index",
+    "pages/index/scenicSpot/reservation/reservation",
+    "pages/index/lceCityImage/lceCityImage",
+    "pages/index/lceCityImage/lceCittyDetails/lceCittyDetails",
+    "pages/index/MicroTravel/details/details",
+    "pages/index/MicroTravel/MicroList/MicroList",
+    "pages/index/position/position",
+    "pages/mylogn/editorial/editorial",
+    "pages/index/entertainment/details/details",
+    "pages/index/entertainment/search/search",
+    "pages/index/homestays/details/details",
+    "pages/mylogn/logon/logon",
+    "pages/mylogn/order/order",
+    "pages/mylogn/order/order-make",
+    "pages/index/homestays/details/itinerary/itinerary",
+    "uni_modules/uni-id-pages/pages/userinfo/deactivate/deactivate",
+    "uni_modules/uni-id-pages/pages/userinfo/userinfo",
+    "uni_modules/uni-id-pages/pages/userinfo/bind-mobile/bind-mobile",
+    "uni_modules/uni-id-pages/pages/userinfo/cropImage/cropImage",
+    "uni_modules/uni-id-pages/pages/login/login-withoutpwd",
+    "uni_modules/uni-id-pages/pages/login/login-withpwd",
+    "uni_modules/uni-id-pages/pages/login/login-smscode",
+    "uni_modules/uni-id-pages/pages/register/register",
+    "uni_modules/uni-id-pages/pages/register/register-by-email",
+    "uni_modules/uni-id-pages/pages/retrieve/retrieve",
+    "uni_modules/uni-id-pages/pages/retrieve/retrieve-by-email",
+    "uni_modules/uni-id-pages/pages/common/webview/webview",
+    "uni_modules/uni-id-pages/pages/userinfo/change_pwd/change_pwd",
+    "uni_modules/uni-id-pages/pages/register/register-admin",
+    "uni_modules/uni-id-pages/pages/userinfo/set-pwd/set-pwd",
+    "uni_modules/uni-id-pages/pages/userinfo/realname-verify/realname-verify",
+    "pages/index/homestays/details/demandForm/demandForm",
+    "pages/index/scenicSpot/reservation/reservationCeshi"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/home_page.png",
+        "selectedIconPath": "static/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mylogn/mylogn",
+        "iconPath": "static/my_page.png",
+        "selectedIconPath": "static/my.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.19",
+      "provider": "wx50b5593e81dd937a"
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "usingComponents": {}
+}

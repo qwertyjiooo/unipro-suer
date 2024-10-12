@@ -1,0 +1,1 @@
+<view class="centent"><view class="HorImageTag"><image src="../../../static/sceniconeA.png" mode></image><view class="textyuding">预约定制旅行</view><view class="textshengxin">随心而行 省心安心</view></view><view data-event-opts="{{[['tap',[['WXlogin']]]]}}" class="onlogin" bindtap="__e">手机号一键登录</view></view>

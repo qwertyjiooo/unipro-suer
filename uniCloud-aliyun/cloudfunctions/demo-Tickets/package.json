@@ -1,0 +1,7 @@
+{
+  "name": "demo-Tickets",
+  "dependencies": {},
+  "extensions": {
+    "uni-cloud-jql": {}
+  }
+}
