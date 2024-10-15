@@ -27,7 +27,7 @@
 			<view class="customization rou">
 				<navigator url="/pages/mylogn/order/order"  class="">
 					<view class="choice">
-						<span>个人/家庭定制</span>
+						<span>个人/家制</span>
 						<span>待旅行</span>
 					</view>
 					<view class="datetext">定制路线或景区标题</view>
